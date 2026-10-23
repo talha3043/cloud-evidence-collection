@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Muhammad Talha</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Muhammad Talha</h1>
+        <p>Roll Number: 23l-3043</p>
+        <p>Email: l233043@lhr.nu.edu.pk</p>
+        <p><a href="/cv.pdf" class="btn-download" download>Download CV (PDF)</a></p>
+    </header>
+
+    <main>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p>FAST National University of Computer and Emerging Sciences, Lahore</p>
+                <p class="date">2023 &ndash; Present</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="card">
+                <ul class="skills-list">
+                    <li><strong>Cloud & DevOps:</strong> Amazon Web Services (AWS EC2, S3, IAM, Lambda, CloudWatch), Linux, Bash, Git</li>
+                    <li><strong>Programming Languages:</strong> Python, C++, JavaScript, SQL</li>
+                    <li><strong>Web Technologies:</strong> HTML5, CSS3, REST APIs, Apache HTTP Server</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card">
+                <h3>Dual-Path Cloud CV Hosting</h3>
+                <p>Designed and deployed a highly available CV delivery architecture on AWS using both an EC2 Apache web server (with automatic S3 synchronization and IMDSv2 metadata injection) and a serverless AWS Lambda function exposed via Function URL.</p>
+            </div>
+            <div class="card">
+                <h3>Automated Infrastructure Evidence Collector</h3>
+                <p>Engineered an automated Bash audit tool validating IAM least-privilege policies, S3 Block Public Access configurations, security group ingress rules, and CloudWatch log groups.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>Hosted on: {{HOSTED_ON}}</footer>
+</body>
+</html>
